@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: moodtune-ai-backend
+    env: docker
+    rootDir: backend
+    plan: starter
+    healthCheckPath: /api/health
+    envVars:
+      - key: MONGO_URL
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: FRONTEND_ORIGIN
+        sync: false
+      - key: SPOTIFY_CLIENT_ID
+        sync: false
+      - key: SPOTIFY_CLIENT_SECRET
+        sync: false

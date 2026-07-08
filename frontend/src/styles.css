@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f7f8fb;
+  color: #15202b;
+}
+
+body { margin: 0; min-width: 320px; }
+button, input, select { font: inherit; }
+
+.screen-center { min-height: 100vh; display: grid; place-items: center; background: #f7f8fb; }
+.app-page { min-height: 100vh; background: #f7f8fb; }
+.panel { background: #ffffff; border: 1px solid #dfe5ef; border-radius: 8px; box-shadow: 0 10px 28px rgba(21, 32, 43, 0.06); }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; border-radius: 6px; padding: 0.65rem 0.9rem; font-weight: 700; transition: 160ms ease; }
+.btn-primary { background: #176b87; color: white; }
+.btn-primary:hover { background: #12576d; }
+.btn-secondary { background: #eef4f6; color: #174454; }
+.btn-danger { background: #9a3412; color: white; }
+.input { width: 100%; border: 1px solid #ccd6e3; border-radius: 6px; padding: 0.7rem 0.8rem; background: white; }
+.label { font-size: 0.82rem; font-weight: 700; color: #435366; }
+.stat { display: grid; gap: 0.2rem; padding: 1rem; border-radius: 8px; background: #f7fafc; border: 1px solid #e3eaf2; }
+.track-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; }
+.track-card { overflow: hidden; border: 1px solid #dfe5ef; border-radius: 8px; background: #fff; }
+.track-card img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; background: #e8edf3; }
